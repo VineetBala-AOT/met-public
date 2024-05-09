@@ -8,7 +8,7 @@ on:
       - "met-web/**"
   push:
     branches:
-      - main    
+      - awesome    
 
 defaults:
   run:
@@ -19,7 +19,7 @@ jobs:
   setup-job:
     runs-on: ubuntu-20.04
 
-    if: github.repository == 'bcgov/met-public'
+    if: github.repository == 'VineetBala-AOT/met-public'
 
     steps:
       - uses: actions/checkout@v2
