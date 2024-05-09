@@ -42,7 +42,7 @@ jobs:
       - name: Install dependencies
         run: |
           echo "@fortawesome:registry=https://npm.fontawesome.com/" > .npmrc
-          echo "//npm.fontawesome.com/:_authToken="abc"" >> .npmrc
+          echo "//npm.fontawesome.com:_authToken=${{ secrets.FONTAWESOME_PACKAGE_TOKEN }}" >> .npmrc
           npm install --legacy-peer-deps
       - name: Lint
         id: lint
