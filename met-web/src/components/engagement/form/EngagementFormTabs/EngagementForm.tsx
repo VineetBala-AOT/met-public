@@ -10,7 +10,7 @@ import { ENGAGEMENT_CROPPER_ASPECT_RATIO, ENGAGEMENT_UPLOADER_HEIGHT } from './c
 import RichTextEditor from 'components/common/RichTextEditor';
 import { getTextFromDraftJsContentState } from 'components/common/RichTextEditor/utils';
 import EngagementContentTabs from './EngagementContent/';
-
+ 
 const EngagementForm = () => {
     const { isSaving, savedEngagement, handleAddBannerImage, setIsNewEngagement } = useContext(ActionContext);
 
